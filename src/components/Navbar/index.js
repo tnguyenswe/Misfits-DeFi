@@ -8,10 +8,10 @@ const Navbar = ({toggle}) => {
         <div>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to="/">
+                    <NavLinks to="home">
                         {/*Misfits*/}
                        <img style={{width: "150px", height: "60px"}} src={LogoImage} alt='logo'/>
-                    </NavLogo>
+                    </NavLinks>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
