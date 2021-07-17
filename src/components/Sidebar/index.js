@@ -11,9 +11,9 @@ const Sidebar = ({isOpen, toggle}) => {
             <SidebarWrapper>
                 <SidebarMenu>
                     <SidebarLink to="about" onClick={toggle}>About</SidebarLink>
-                    <SidebarLink to="discover" onClick={toggle}>Roadmap</SidebarLink>
-                    <SidebarLink to="services" onClick={toggle}>Token</SidebarLink>
-                    <SidebarLink to="signup" onClick={toggle}>Where to invest</SidebarLink>
+                    <SidebarLink to="roadmap" onClick={toggle}>Roadmap</SidebarLink>
+                    <SidebarLink to="token" onClick={toggle}>Token</SidebarLink>
+                    <SidebarLink to="invest" onClick={toggle}>Invest</SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
                     <SidebarRoute href="https://drive.google.com/file/d/19z9foncYtzas3w8BPg81GEcDGHEtIMz2/view">White Paper</SidebarRoute>

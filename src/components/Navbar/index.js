@@ -1,6 +1,6 @@
 import React from 'react'
 import {FaBars} from 'react-icons/fa'
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
+import { Nav, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
 import LogoImage from './misfits-logo.png'
 
 const Navbar = ({toggle}) => {
@@ -20,13 +20,13 @@ const Navbar = ({toggle}) => {
                             <NavLinks to="about">About</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="discover">Roadmap</NavLinks>
+                            <NavLinks to="roadmap">Roadmap</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="services">Token</NavLinks>
+                            <NavLinks to="token">Token</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="signups">Where to invest</NavLinks>
+                            <NavLinks to="invest">Invest</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
