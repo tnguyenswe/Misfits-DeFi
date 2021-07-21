@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
 import Video from '../../videos/video.mp4';
 import {Link1} from '../ButtonElements';
+import HeroImage from '../../images/misfits-logo.png';
 
 const HeroSection = () => {
 
@@ -14,9 +15,10 @@ const HeroSection = () => {
     return (
         <HeroContainer id="home">
             <HeroBg>
-                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+                <VideoBg autoPlay loop muted src={Video} className="hidden sm:flex" type='video/mp4' />
             </HeroBg>
             <HeroContent>
+                <img src={HeroImage} alt="" className="min-w-0 w-3/12"/>
                 <HeroH1>Misfits DeFi</HeroH1>
                 <HeroP>Preventing food waste and delivering low cost groceries.</HeroP>
                 <HeroBtnWrapper>

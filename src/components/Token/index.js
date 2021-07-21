@@ -40,13 +40,8 @@ const Token = () => {
         <MainDiv id="token">
             <QuarterContainers>
                 <QuarterText>Tokenomics</QuarterText>
-                <PrimaryText>Ecosystem/Interest Fund (50%)</PrimaryText>
-                <SecondaryText>This allocation will go to the various
-needs of Misfits DeFi. For example, we may allocate tokens for
-partnerships which may be used to incentivize new investors and
-project sign ups for the Misfits DeFi ecosystem. Other uses will be
-for liquidity, rewarding token holders through token airdrops, and
-more.</SecondaryText>
+                <PrimaryText>Text</PrimaryText>
+                <SecondaryText>To be defined</SecondaryText>
             </QuarterContainers>
 
             {/* <QuarterContainers>
