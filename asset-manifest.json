@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Misfits-DeFi/static/css/main.c9695d2a.chunk.css",
-    "main.js": "/Misfits-DeFi/static/js/main.3be609f8.chunk.js",
-    "main.js.map": "/Misfits-DeFi/static/js/main.3be609f8.chunk.js.map",
+    "main.css": "/Misfits-DeFi/static/css/main.cce0bc7d.chunk.css",
+    "main.js": "/Misfits-DeFi/static/js/main.d650d1ec.chunk.js",
+    "main.js.map": "/Misfits-DeFi/static/js/main.d650d1ec.chunk.js.map",
     "runtime-main.js": "/Misfits-DeFi/static/js/runtime-main.03185cf3.js",
     "runtime-main.js.map": "/Misfits-DeFi/static/js/runtime-main.03185cf3.js.map",
-    "static/js/2.fbbae3ad.chunk.js": "/Misfits-DeFi/static/js/2.fbbae3ad.chunk.js",
-    "static/js/2.fbbae3ad.chunk.js.map": "/Misfits-DeFi/static/js/2.fbbae3ad.chunk.js.map",
+    "static/js/2.433aeac0.chunk.js": "/Misfits-DeFi/static/js/2.433aeac0.chunk.js",
+    "static/js/2.433aeac0.chunk.js.map": "/Misfits-DeFi/static/js/2.433aeac0.chunk.js.map",
     "static/js/3.cbd3780f.chunk.js": "/Misfits-DeFi/static/js/3.cbd3780f.chunk.js",
     "static/js/3.cbd3780f.chunk.js.map": "/Misfits-DeFi/static/js/3.cbd3780f.chunk.js.map",
     "index.html": "/Misfits-DeFi/index.html",
-    "static/css/main.c9695d2a.chunk.css.map": "/Misfits-DeFi/static/css/main.c9695d2a.chunk.css.map",
-    "static/js/2.fbbae3ad.chunk.js.LICENSE.txt": "/Misfits-DeFi/static/js/2.fbbae3ad.chunk.js.LICENSE.txt",
+    "static/css/main.cce0bc7d.chunk.css.map": "/Misfits-DeFi/static/css/main.cce0bc7d.chunk.css.map",
+    "static/js/2.433aeac0.chunk.js.LICENSE.txt": "/Misfits-DeFi/static/js/2.433aeac0.chunk.js.LICENSE.txt",
     "static/media/misfits-logo.5c2f58cb.png": "/Misfits-DeFi/static/media/misfits-logo.5c2f58cb.png",
     "static/media/misfits-logo.6ba6a884.png": "/Misfits-DeFi/static/media/misfits-logo.6ba6a884.png",
     "static/media/video.d28831bc.mp4": "/Misfits-DeFi/static/media/video.d28831bc.mp4"
   },
   "entrypoints": [
     "static/js/runtime-main.03185cf3.js",
-    "static/js/2.fbbae3ad.chunk.js",
-    "static/css/main.c9695d2a.chunk.css",
-    "static/js/main.3be609f8.chunk.js"
+    "static/js/2.433aeac0.chunk.js",
+    "static/css/main.cce0bc7d.chunk.css",
+    "static/js/main.d650d1ec.chunk.js"
   ]
 }
