@@ -76,6 +76,10 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     height: 80px;
+
+    :hover {
+        text-decoration: underline;
+    }
 `
 
 export const NavLinks = styled(LinkScroll)`

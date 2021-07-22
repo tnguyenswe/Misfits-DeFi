@@ -2,6 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 import RadioButtonCheckedIcon from '@material-ui/icons/RadioButtonChecked';
 
+export const HeroBg = styled.div`
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: #070f1c;
+
+`
+
 const MainDiv = styled.div`
     height: 1000px;
     width: 100%;
@@ -9,6 +20,12 @@ const MainDiv = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #070f1c;
+    z-index: 2;
+
+    @media (max-width: 450px){
+        height: 1300px;
+    }
     
 `
 
@@ -19,15 +36,17 @@ const MyGrid = styled.div`
 
 const RoadmapButton = styled(RadioButtonCheckedIcon)`
     color: #4ec8ca;
+    z-index: 2;
 `
 
 const QuarterText = styled.h1`
     color: #4ec8ca;
     font-size: 32px;
+    z-index: 2;
 `
 
 const VerticalLine = styled.div`
-    border: 2px solid black;
+    border: 2px solid white;
     height: 10px;
     padding-top: 100px;
     width: 1px;
@@ -36,12 +55,18 @@ const VerticalLine = styled.div`
 const TextDiv = styled.div`
     display: flex;
     flex-direction: column;
+    z-index: 2;
 `
 
 const VerticalLineDiv = styled.div`
     display: flex;
     justify-content: center;
     text-align: center;
+    z-index: 2;
+`
+
+const Texts = styled.h1`
+    color: white;
 `
 
 
@@ -51,6 +76,7 @@ const TitleText = styled.h1`
     color: #4ec8ca;
     font-size: 32px;
     justify-self: center;
+    z-index: 2;
 `
 
 const Roadmap = () => {
@@ -71,8 +97,8 @@ const Roadmap = () => {
                     <VerticalLine/>
                 </VerticalLineDiv>
                 <TextDiv>
-                    <h1>- Launch of Misfits DeFi website</h1>
-                    <h1>- White Paper established</h1>
+                    <Texts>- Launch of Misfits DeFi website</Texts>
+                    <Texts>- White Paper established</Texts>
                 </TextDiv>
 
                 <VerticalLineDiv>
@@ -84,9 +110,9 @@ const Roadmap = () => {
                     <VerticalLine/>
                 </VerticalLineDiv>
                 <TextDiv>
-                    <h1>- Development of token</h1>
-                    <h1>- KYC/AML</h1>
-                    <h1>- Presale Launch</h1>
+                    <Texts>- Development of token</Texts>
+                    <Texts>- KYC/AML</Texts>
+                    <Texts>- Presale Launch</Texts>
                 </TextDiv>
 
                 <VerticalLineDiv>
@@ -98,8 +124,8 @@ const Roadmap = () => {
                     <VerticalLine/>
                 </VerticalLineDiv>
                 <TextDiv>
-                    <h1>- Misfits DeFi Token Sale</h1>
-                    <h1>- DEX Listing</h1>
+                    <Texts>- Misfits DeFi Token Sale</Texts>
+                    <Texts>- DEX Listing</Texts>
                 </TextDiv>
 
                 <VerticalLineDiv>
@@ -110,9 +136,9 @@ const Roadmap = () => {
                 <VerticalLineDiv>
                 </VerticalLineDiv>
                 <TextDiv>
-                    <h1>- USA Misfits Delivery Platform Development</h1>
-                    <h1>- Token Airdrops</h1>
-                    <h1>- Marketing Campaigns</h1>
+                    <Texts>- USA Misfits Delivery Platform Development</Texts>
+                    <Texts>- Token Airdrops</Texts>
+                    <Texts>- Marketing Campaigns</Texts>
                 </TextDiv>
 
 

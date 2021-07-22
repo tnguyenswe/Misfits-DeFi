@@ -2,13 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 const MainDiv = styled.div`
-    height: 500px;
+    height: 800px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #070f1c;
     
 `
 
@@ -43,22 +43,6 @@ const Token = () => {
                 <PrimaryText>Text</PrimaryText>
                 <SecondaryText>To be defined</SecondaryText>
             </QuarterContainers>
-
-            {/* <QuarterContainers>
-                <QuarterText>Q4 2021</QuarterText>
-                <PrimaryText>Development of token</PrimaryText>
-                <PrimaryText>KYC/AML</PrimaryText>
-            </QuarterContainers>
-
-            <QuarterContainers>
-                <QuarterText>Q1 2022</QuarterText>
-                <PrimaryText>Misfits DeFi Token Sale</PrimaryText>
-            </QuarterContainers>
-
-            <QuarterContainers>
-                <QuarterText>Q2 2022</QuarterText>
-                <PrimaryText>USA Misfits Delivery Platform Development</PrimaryText>
-            </QuarterContainers> */}
         </MainDiv>
     )
 }

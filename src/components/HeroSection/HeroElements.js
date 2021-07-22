@@ -1,6 +1,5 @@
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
-
 
 export const HeroContainer = styled.div`
     background: #0c0c0c;
@@ -8,17 +7,26 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 800px;
+    height: 1000px;
+    padding-bottom: 200px;
     position: relative;
-    z-index: 1;
     margin-top: 80px;
     background-color: #070f1c;
 
+    
 
-    @media (max-width: 400px) {
-        height: 600px;
+
+    @media (max-width: 500px) {
+        height: 800px;
         padding: 0;
+        padding-bottom: 400px;
+        padding-top: 300px;
     }
+
+    @media (min-width: 600px){
+        z-index: 2;
+    }
+
 
     :before{
         content: '';
@@ -28,7 +36,6 @@ export const HeroContainer = styled.div`
         right: 0;
         bottom: 0;
         background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), linear-gradient(180 deg, rgba(0,0,0,0.2) 0%, transparent 100%);
-        z-index: 2;
     }
 
 `
@@ -45,6 +52,11 @@ export const HeroBg = styled.div`
     height: 100%;
     overflow: hidden;
     background-color: #070f1c;
+
+    @media (max-width 500px){
+        z-index: 2;
+    }
+
 `
 
 export const HeroBg2 = styled.div`
@@ -67,7 +79,7 @@ export const VideoBg = styled.video`
 `
 
 export const HeroContent = styled.div`
-    z-index: 3;
+    z-index: 2;
     max-width: 1200px;
     position: absolute;
     padding: 8px 24px;
@@ -75,12 +87,25 @@ export const HeroContent = styled.div`
     flex-direction: column;
     align-items: center;
 `
+const MoveInBottom = keyframes`
+    0% {
+      opacity: 0;
+      transform: translateY(3rem); }
+    100% {
+      opacity: 1;
+      transform: translate(0); } 
+`
 
 export const HeroH1 = styled.h1`
     color: #fff;
     font-size: 48px;
     text-align: center;
     font-weight: 700;
+
+    animation-name: ${MoveInBottom};
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+
     @media screen and (max-width: 768px){
         font-size: 40px;
     }
@@ -98,6 +123,9 @@ export const HeroP = styled.p`
     font-size: 24px;
     text-align: center;
     max-width: 600px;
+    animation-name: ${MoveInBottom};
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 
     @media screen and (max-width: 768px){
         font-size: 24px;
@@ -113,6 +141,9 @@ export const HeroBtnWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation-name: ${MoveInBottom};
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 
 `
 
@@ -126,4 +157,11 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
     margin-left: 8px;
     font-size: 20px;
 
+`
+
+export const NewHeroImage = styled.img`
+
+    animation-name: ${MoveInBottom};
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 `

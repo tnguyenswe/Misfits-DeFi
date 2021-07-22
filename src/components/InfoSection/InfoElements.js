@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
     color: #fff;
-    background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
+    background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#070f1c;')};
 
     @media screen and (max-width: 768px){
         padding: 100px 0;
@@ -11,7 +11,7 @@ export const InfoContainer = styled.div`
 
 export const InfoWrapper = styled.div`
     display: grid;
-    z-index: 1;
+    z-index: 2;
     height: 860px;
     width: 100%;
     max-width: 1100px;
@@ -23,6 +23,7 @@ export const InfoWrapper = styled.div`
 `
 
 export const InfoRow = styled.div`
+    z-index: 2;
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;

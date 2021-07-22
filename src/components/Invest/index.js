@@ -8,12 +8,16 @@ const MainDiv = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #070f1c;
+
+    @media (max-width: 450px){
+        height: 1300px;
+    }
     
 `
 
 const QuarterText = styled.h1`
-    color: black;
+    color: white;
     font-size: 32px;
     padding-bottom: 30px;
 `
@@ -24,6 +28,7 @@ const QuarterContainers = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 `
 
 const TitleText = styled.h1`
@@ -41,7 +46,7 @@ const MyGrid = styled.div`
     grid-column-gap: 10px;
     grid-row-gap: 20px;
 
-    @media (max-width: 400px){
+    @media (max-width: 600px){
         grid-template-columns: 1fr;
     }
 
@@ -50,16 +55,27 @@ const MyGrid = styled.div`
 const ColumnFlex = styled.div`
     display: flex;
     flex-direction: column;
+    border-radius: 20px;
+    border: 2px solid #d3d3d3;
+    padding: 10px;
 `
 
 const StepText = styled.h1`
     font-size: 24px;
     padding-bottom: 10px;
+    color: white;
+`
+
+const TealStepText = styled.h1`
+    font-size: 24px;
+    padding-bottom: 10px;
+    color: #4ec8ca;
 `
 
 const SmallerStepText = styled.h1`
     font-size: 20px;
     padding-bottom: 10px;
+    color: white;
 `
 
 const ContainerDiv = styled.div`
@@ -80,37 +96,21 @@ const Invest = () => {
                 </ContainerDiv>
                 <MyGrid>
                     <ColumnFlex>
-                        <StepText>Step 1:</StepText>
+                        <TealStepText>Step 1:</TealStepText>
                         <StepText>Get $BNB on <a style={{textDecoration: 'underline'}} href="https://www.binance.com/en">Binance Exchange</a></StepText>
                     </ColumnFlex>
                     <ColumnFlex>
-                        <StepText>Step 2:</StepText>
+                        <TealStepText>Step 2:</TealStepText>
                         <StepText>Set up a wallet and send your BNB there</StepText>
                         <SmallerStepText>We recommend <a style={{textDecoration: 'underline'}} href="https://trustwallet.com/deeplink/">Trust Wallet</a></SmallerStepText>
                     </ColumnFlex>
                     <ColumnFlex>
-                        <StepText>Step 3:</StepText>
+                        <TealStepText>Step 3:</TealStepText>
                         <StepText>Join our launch to buy $MFTS</StepText>
                         <SmallerStepText>Swap BNB for MFTS on PancakeSwap (don't forget to set slippage to 12%!) </SmallerStepText>
                     </ColumnFlex>
                 </MyGrid>
             </QuarterContainers>
-
-            {/* <QuarterContainers>
-                <QuarterText>Q4 2021</QuarterText>
-                <PrimaryText>Development of token</PrimaryText>
-                <PrimaryText>KYC/AML</PrimaryText>
-            </QuarterContainers>
-
-            <QuarterContainers>
-                <QuarterText>Q1 2022</QuarterText>
-                <PrimaryText>Misfits DeFi Token Sale</PrimaryText>
-            </QuarterContainers>
-
-            <QuarterContainers>
-                <QuarterText>Q2 2022</QuarterText>
-                <PrimaryText>USA Misfits Delivery Platform Development</PrimaryText>
-            </QuarterContainers> */}
         </MainDiv>
     )
 }
