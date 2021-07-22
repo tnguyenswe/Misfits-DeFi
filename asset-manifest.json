@@ -1,25 +1,29 @@
 {
   "files": {
     "main.css": "/Misfits-DeFi/static/css/main.cce0bc7d.chunk.css",
-    "main.js": "/Misfits-DeFi/static/js/main.fe37c3f0.chunk.js",
-    "main.js.map": "/Misfits-DeFi/static/js/main.fe37c3f0.chunk.js.map",
-    "runtime-main.js": "/Misfits-DeFi/static/js/runtime-main.03185cf3.js",
-    "runtime-main.js.map": "/Misfits-DeFi/static/js/runtime-main.03185cf3.js.map",
-    "static/js/2.433aeac0.chunk.js": "/Misfits-DeFi/static/js/2.433aeac0.chunk.js",
-    "static/js/2.433aeac0.chunk.js.map": "/Misfits-DeFi/static/js/2.433aeac0.chunk.js.map",
-    "static/js/3.cbd3780f.chunk.js": "/Misfits-DeFi/static/js/3.cbd3780f.chunk.js",
-    "static/js/3.cbd3780f.chunk.js.map": "/Misfits-DeFi/static/js/3.cbd3780f.chunk.js.map",
+    "main.js": "/Misfits-DeFi/static/js/main.12cfd208.chunk.js",
+    "main.js.map": "/Misfits-DeFi/static/js/main.12cfd208.chunk.js.map",
+    "runtime-main.js": "/Misfits-DeFi/static/js/runtime-main.80878286.js",
+    "runtime-main.js.map": "/Misfits-DeFi/static/js/runtime-main.80878286.js.map",
+    "static/css/2.47f28a85.chunk.css": "/Misfits-DeFi/static/css/2.47f28a85.chunk.css",
+    "static/js/2.a45bf0bc.chunk.js": "/Misfits-DeFi/static/js/2.a45bf0bc.chunk.js",
+    "static/js/2.a45bf0bc.chunk.js.map": "/Misfits-DeFi/static/js/2.a45bf0bc.chunk.js.map",
+    "static/js/3.c810f29d.chunk.js": "/Misfits-DeFi/static/js/3.c810f29d.chunk.js",
+    "static/js/3.c810f29d.chunk.js.map": "/Misfits-DeFi/static/js/3.c810f29d.chunk.js.map",
     "index.html": "/Misfits-DeFi/index.html",
+    "static/css/2.47f28a85.chunk.css.map": "/Misfits-DeFi/static/css/2.47f28a85.chunk.css.map",
     "static/css/main.cce0bc7d.chunk.css.map": "/Misfits-DeFi/static/css/main.cce0bc7d.chunk.css.map",
-    "static/js/2.433aeac0.chunk.js.LICENSE.txt": "/Misfits-DeFi/static/js/2.433aeac0.chunk.js.LICENSE.txt",
+    "static/js/2.a45bf0bc.chunk.js.LICENSE.txt": "/Misfits-DeFi/static/js/2.a45bf0bc.chunk.js.LICENSE.txt",
+    "static/media/misfits-logo-with-text.5c2f58cb.png": "/Misfits-DeFi/static/media/misfits-logo-with-text.5c2f58cb.png",
     "static/media/misfits-logo.5c2f58cb.png": "/Misfits-DeFi/static/media/misfits-logo.5c2f58cb.png",
     "static/media/misfits-logo.6ba6a884.png": "/Misfits-DeFi/static/media/misfits-logo.6ba6a884.png",
     "static/media/video.d28831bc.mp4": "/Misfits-DeFi/static/media/video.d28831bc.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.03185cf3.js",
-    "static/js/2.433aeac0.chunk.js",
+    "static/js/runtime-main.80878286.js",
+    "static/css/2.47f28a85.chunk.css",
+    "static/js/2.a45bf0bc.chunk.js",
     "static/css/main.cce0bc7d.chunk.css",
-    "static/js/main.fe37c3f0.chunk.js"
+    "static/js/main.12cfd208.chunk.js"
   ]
 }
