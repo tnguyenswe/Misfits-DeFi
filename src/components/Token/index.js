@@ -128,7 +128,7 @@ const Token = () => {
                     </div>
                     <PrimaryText style={{ color: 'white', fontSize: '14px', paddingBottom: '25px' }}>Total Token Supply: 1,000,000,000</PrimaryText>
                     <div style={{ display: 'flex', alignItems: 'center', paddingBottom: '25px' }}>
-                        <PrimaryText style={{ color: 'white', fontWeight: 'bold' }}>LEGENDS</PrimaryText>
+                        <PrimaryText style={{ color: 'white', fontWeight: 'bold' }}>LEGEND</PrimaryText>
                         <hr style={{ height: '2px', width: '100px', borderWidth: '0', color: '#4ec8ca', backgroundColor: '#4ec8ca', marginLeft: '10px' }}></hr>
                     </div>
 
