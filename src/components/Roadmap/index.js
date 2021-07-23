@@ -43,6 +43,7 @@ const QuarterText = styled.h1`
     color: #4ec8ca;
     font-size: 32px;
     z-index: 2;
+    font-weight: bold;
 `
 
 const VerticalLine = styled.div`

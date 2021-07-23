@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import { HeroBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight, NewHeroImage } from './HeroElements';
+// import { HeroBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight, NewHeroImage } from './HeroElements';
+import { HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight, NewHeroImage } from './HeroElements';
 import {Link1} from '../ButtonElements';
 import HeroImage from '../../images/misfits-logo.png';
 import styled from 'styled-components';
@@ -36,9 +37,9 @@ const HeroSection = () => {
 
     return (
         <MainDiv id="home">
-            <HeroBg>
-                {/* <VideoBg autoPlay loop muted src={Video} className="hidden sm:flex" type='video/mp4' /> */}
-            </HeroBg>
+            {/* <HeroBg>
+                <VideoBg autoPlay loop muted src={Video} className="hidden sm:flex" type='video/mp4' />
+            </HeroBg> */}
             <HeroContent>
                 <NewHeroImage src={HeroImage} alt="" className="min-w-0 w-3/12"/>
                 <HeroH1>Misfits DeFi</HeroH1>

@@ -70,6 +70,7 @@ const TealStepText = styled.h1`
     font-size: 24px;
     padding-bottom: 10px;
     color: #4ec8ca;
+    font-weight: bold;
 `
 
 const SmallerStepText = styled.h1`
