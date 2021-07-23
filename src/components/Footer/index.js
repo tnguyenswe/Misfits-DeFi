@@ -5,7 +5,7 @@ import { SocialIcon } from 'react-social-icons';
 
 
 const MainDiv = styled.div`
-    height: 400px;
+    height: 200px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -13,10 +13,11 @@ const MainDiv = styled.div`
     align-items: center;
     // background-color: #070f1c;
     background-color: black;
-
+    z-index: 3;
     
-    @media (max-width: 500px){
+    @media (max-width: 600px){
         padding-top: 50px;
+        height: 500px;
     }
     
 `
@@ -34,7 +35,7 @@ const LargeText = styled.h1`
 `
 
 const ParentGrid = styled.div`
-    z-index: 2;
+    z-index: 4;
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -44,6 +45,7 @@ const ParentGrid = styled.div`
 
     @media (max-width: 600px){
         grid-template-columns: 1fr;
+        padding-bottom: 100px;
     }
 `
 
@@ -59,6 +61,10 @@ const FooterImage = styled.img`
     width: 300px;
     justify-self: start;
     align-self: start;
+    @media (max-width: 600px){
+        justify-self: center;
+        align-self: center;
+    }
 `
 
 // const CircleDiv = styled.div`
@@ -88,6 +94,7 @@ const Footer = () => {
             <ParentGrid>
                 <GridColumns>
                     <FooterImage src={MisfitsLogo} alt="Logo"/>
+                    <PrimaryText>Copyright © 2021 Misfitsdefi.com All rights reserved.</PrimaryText>
                 </GridColumns>
                 <GridColumns>
                     <PrimaryText>Misfits DeFi (MFTS) is a community driven, fair launched DeFi Token. We will continue to build on the token and the delivery platform taking into consideration the feedback from the community.</PrimaryText>

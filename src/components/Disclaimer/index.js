@@ -10,8 +10,8 @@ const MainDiv = styled.div`
     align-items: center;
     background-color: #070f1c;
 
-    @media (max-width: 500px){
-        height: 700px;
+    @media (max-width: 600px){
+        height: 750px;
     }
     
 `

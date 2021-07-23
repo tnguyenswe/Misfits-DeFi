@@ -1,30 +1,8 @@
 import React, {useState} from 'react';
-import { HeroBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight, NewHeroImage } from './HeroElements';
+import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight, NewHeroImage } from './HeroElements';
+import Video from '../../videos/video.mp4';
 import {Link1} from '../ButtonElements';
 import HeroImage from '../../images/misfits-logo.png';
-import styled from 'styled-components';
-
-const MainDiv = styled.div`
-    height: 1000px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #070f1c;
-    z-index: 2;
-    padding-bottom: 100px;
-
-    @media (max-width: 500px) {
-        height: 800px;
-        padding: 0;
-        padding-bottom: 400px;
-        padding-top: 400px;
-    }
-
-
-    
-`
 
 const HeroSection = () => {
 
@@ -35,7 +13,7 @@ const HeroSection = () => {
     }
 
     return (
-        <MainDiv id="home">
+        <HeroContainer id="home">
             <HeroBg>
                 {/* <VideoBg autoPlay loop muted src={Video} className="hidden sm:flex" type='video/mp4' /> */}
             </HeroBg>
@@ -49,7 +27,7 @@ const HeroSection = () => {
                     </Link1>
                 </HeroBtnWrapper>
             </HeroContent>
-        </MainDiv>
+        </HeroContainer>
     )
 }
 
