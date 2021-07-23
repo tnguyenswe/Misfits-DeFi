@@ -1,6 +1,7 @@
 import React from 'react';
-import { Button } from '../ButtonElements';
-import {InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img} from './InfoElements';
+// import { Button } from '../ButtonElements';
+// import {InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img} from './InfoElements';
+import {InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, ImgWrap, Img} from './InfoElements';
 
 const InfoSection = ({lightBg, id, imgStart, topLine, lightText, darkText, headline, description, buttonLabel, img, alt, primary, dark, dark2}) => {
     return (
@@ -13,7 +14,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, darkText, headl
                                 <TopLine>{topLine}</TopLine>
                                 <Heading lightText={lightText}>{headline}</Heading>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                                <BtnWrap>
+                                {/* <BtnWrap>
                                     <Button to="home"
                                     smooth={true}
                                     duration={500}
@@ -24,7 +25,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, darkText, headl
                                     dark={dark ? 1 : 0}
                                     dark2={dark2 ? 1 : 0}
                                     >{buttonLabel}</Button>
-                                </BtnWrap>
+                                </BtnWrap> */}
                             </TextWrapper>
                         </Column1>
                         <Column2>

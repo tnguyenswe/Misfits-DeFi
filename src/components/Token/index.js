@@ -13,6 +13,10 @@ const MainDiv = styled.div`
     background-color: #070f1c;
 
     z-index: 2;
+
+    @media (max-width: 1000px){
+        height: 1200px;
+    }
     
 `
 
@@ -26,7 +30,7 @@ const QuarterText = styled.h1`
 
 const PrimaryText = styled.h1`
     color: white;
-    font-size: 20px;
+    font-size: 24px;
 `
 
 
@@ -42,9 +46,10 @@ const QuarterContainers = styled.div`
 const MyGrid = styled.div`
     display: grid;
     width: 80%;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 50px;
     grid-row-gap: 10px;
+    z-index: 2;
 
     @media (max-width: 1000px){
         grid-template-columns: 1fr;
@@ -57,9 +62,12 @@ const ColumnFlex = styled.div`
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    border: 2px solid #d3d3d3;
     padding: 10px;
-    background-color: white;
+    padding-left: 24px;
+
+    @media (max-width: 1000px){
+        padding-left: 0px;
+    }
 `
 
 const PieChartContainer = styled.div`
@@ -68,6 +76,14 @@ const PieChartContainer = styled.div`
         width: 200px;
     }
 `
+
+const PieChartLabel = styled.h1`
+    color: white;
+    width: max-content;
+    font-size: 16px;
+    padding: 4px;
+`
+
 
 const Token = () => {
 
@@ -79,37 +95,64 @@ const Token = () => {
 
             <MyGrid>
                 <QuarterContainers>
-                    <PrimaryText>Total Tokens (MFTS)</PrimaryText>
-                    <PrimaryText style={{ paddingBottom: '50px' }}>1,000,000,000 Supply</PrimaryText>
                     <PieChartContainer>
-                    <PieChart
-                        data={[
-                            { title: 'One', value: 10, color: '#2e719a' },
-                            { title: 'Two', value: 15, color: '#479bb4' },
-                            { title: 'Three', value: 20, color: '#4ec8ca' },
-                            { title: 'Four', value: 20, color: '#162152' },
-                            { title: 'Five', value: 20, color: '#1b4879' },
-                        ]}
-                        lineWidth={40}
-                        segmentsStyle={{ transition: 'stroke .3s' }}
-                        style={{
-                            fontFamily:
-                                '"Nunito Sans", sans-serif',
-                            fontSize: '8px',
-                            zIndex: '1',
-                        }}
-                        label={({ dataEntry }) => Math.round(dataEntry.percentage) + '%'}
-                        labelPosition={100 - lineWidth / 2}
-                        labelStyle={{
-                            fill: '#fff',
-                            opacity: 0.75,
-                            pointerEvents: 'none',
-                        }}
-                    />;
+                        <PieChart
+                            data={[
+                                { title: 'One', value: 15, color: '#2e719a' },
+                                { title: 'Two', value: 40, color: '#479bb4' },
+                                { title: 'Three', value: 20, color: '#4ec8ca' },
+                                { title: 'Four', value: 25, color: '#162152' },
+                            ]}
+                            lineWidth={40}
+                            segmentsStyle={{ transition: 'stroke .3s' }}
+                            style={{
+                                fontFamily:
+                                    '"Nunito Sans", sans-serif',
+                                fontSize: '8px',
+                                zIndex: '1',
+                            }}
+                            label={({ dataEntry }) => Math.round(dataEntry.percentage) + '%'}
+                            labelPosition={100 - lineWidth / 2}
+                            labelStyle={{
+                                fill: '#fff',
+                                opacity: 0.75,
+                                pointerEvents: 'none',
+                            }}
+                        />;
                     </PieChartContainer>
-                    </QuarterContainers>
+                </QuarterContainers>
                 <ColumnFlex>
-                    <h1 style={{backgroundColor: 'blue'}}>Hello world</h1>
+                    <div style={{ display: 'flex', alignItems: 'center', paddingBottom: '25px' }}>
+                        <PrimaryText style={{ color: 'white', fontWeight: 'bold' }}>MFTS TOKEN</PrimaryText>
+                        <hr style={{ height: '2px', width: '100px', borderWidth: '0', color: '#4ec8ca', backgroundColor: '#4ec8ca', marginLeft: '10px' }}></hr>
+                    </div>
+                    <PrimaryText style={{ color: 'white', fontSize: '14px', paddingBottom: '25px' }}>Total Token Supply: 1,000,000,000</PrimaryText>
+                    <div style={{ display: 'flex', alignItems: 'center', paddingBottom: '25px' }}>
+                        <PrimaryText style={{ color: 'white', fontWeight: 'bold' }}>LEGENDS</PrimaryText>
+                        <hr style={{ height: '2px', width: '100px', borderWidth: '0', color: '#4ec8ca', backgroundColor: '#4ec8ca', marginLeft: '10px' }}></hr>
+                    </div>
+
+                    <div style={{ display: 'flex', alignItems: 'center', paddingBottom: '10px' }}>
+                        <div style={{ borderRadius: '50%', width: '50px', height: '50px', backgroundColor: '#2e719a', marginRight: '10px' }}></div>
+                        <PieChartLabel>Pre-sale</PieChartLabel>
+                    </div>
+
+                    <div style={{ display: 'flex', alignItems: 'center', paddingBottom: '10px' }}>
+                        <div style={{ borderRadius: '50%', width: '50px', height: '50px', backgroundColor: '#479bb4', marginRight: '10px' }}></div>
+                        <PieChartLabel>Public sale</PieChartLabel>
+                    </div>
+
+                    <div style={{ display: 'flex', alignItems: 'center', paddingBottom: '10px' }}>
+                        <div style={{ borderRadius: '50%', width: '50px', height: '50px', backgroundColor: '#4ec8ca', marginRight: '10px' }}></div>
+                        <PieChartLabel>Team / Marketing</PieChartLabel>
+                    </div>
+
+                    <div style={{ display: 'flex', alignItems: 'center', paddingBottom: '10px' }}>
+                        <div style={{ borderRadius: '50%', width: '50px', height: '50px', backgroundColor: '#162152', marginRight: '10px' }}></div>
+                        <PieChartLabel>Airdrops / Holding Rewards</PieChartLabel>
+                    </div>
+
+
                 </ColumnFlex>
             </MyGrid>
 

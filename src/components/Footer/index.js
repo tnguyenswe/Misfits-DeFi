@@ -17,7 +17,7 @@ const MainDiv = styled.div`
     
     @media (max-width: 600px){
         padding-top: 50px;
-        height: 500px;
+        height: 550px;
     }
     
 `

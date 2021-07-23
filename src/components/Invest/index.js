@@ -56,7 +56,7 @@ const ColumnFlex = styled.div`
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    border: 2px solid #d3d3d3;
+    // border: 2px solid #d3d3d3;
     padding: 10px;
 `
 
