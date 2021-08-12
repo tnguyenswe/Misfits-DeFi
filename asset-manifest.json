@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Misfits-DeFi/static/css/main.d1839e64.chunk.css",
-    "main.js": "/Misfits-DeFi/static/js/main.8cdc7f54.chunk.js",
-    "main.js.map": "/Misfits-DeFi/static/js/main.8cdc7f54.chunk.js.map",
+    "main.js": "/Misfits-DeFi/static/js/main.83547848.chunk.js",
+    "main.js.map": "/Misfits-DeFi/static/js/main.83547848.chunk.js.map",
     "runtime-main.js": "/Misfits-DeFi/static/js/runtime-main.40de4b03.js",
     "runtime-main.js.map": "/Misfits-DeFi/static/js/runtime-main.40de4b03.js.map",
     "static/css/2.47f28a85.chunk.css": "/Misfits-DeFi/static/css/2.47f28a85.chunk.css",
@@ -23,6 +23,6 @@
     "static/css/2.47f28a85.chunk.css",
     "static/js/2.0bdfb54a.chunk.js",
     "static/css/main.d1839e64.chunk.css",
-    "static/js/main.8cdc7f54.chunk.js"
+    "static/js/main.83547848.chunk.js"
   ]
 }
