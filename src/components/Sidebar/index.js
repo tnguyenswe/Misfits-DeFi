@@ -16,7 +16,7 @@ const Sidebar = ({isOpen, toggle}) => {
                     <SidebarLink to="invest" onClick={toggle}>Invest</SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute href="https://drive.google.com/file/d/19z9foncYtzas3w8BPg81GEcDGHEtIMz2/view">White Paper</SidebarRoute>
+                    <SidebarRoute href="https://drive.google.com/file/d/1SwC0mxgutbIHJ4LT-rt4IcwiU4j_CL5G/view?usp=sharing">White Paper</SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>

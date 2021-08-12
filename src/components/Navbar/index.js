@@ -30,7 +30,7 @@ const Navbar = ({toggle}) => {
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink href="https://drive.google.com/file/d/19z9foncYtzas3w8BPg81GEcDGHEtIMz2/view">White Paper</NavBtnLink>
+                        <NavBtnLink href="https://drive.google.com/file/d/1SwC0mxgutbIHJ4LT-rt4IcwiU4j_CL5G/view?usp=sharing">White Paper</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>
