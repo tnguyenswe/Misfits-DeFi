@@ -22,9 +22,6 @@ const MainDiv = styled.div`
         padding-bottom: 400px;
         padding-top: 400px;
     }
-
-
-    
 `
 
 const HeroSection = () => {
